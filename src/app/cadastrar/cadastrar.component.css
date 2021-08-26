@@ -1,0 +1,13 @@
+#cadastro-background {
+    min-height: 695px;
+    background-color: rgb(93, 174, 120);
+}
+
+#primeira-coluna {
+    background-color: darkcyan;
+}
+
+#colunas {
+    margin-right: 110px;
+    margin-left: 110px;
+}
