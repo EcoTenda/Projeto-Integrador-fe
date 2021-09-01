@@ -7,17 +7,24 @@
                     <h4>Aqui vai ficar um sub-título para o login</h4>
 
                     <div class="form-group">
-                        <label for="nome">Usuario</label>
-                        <input class="form-control" type="email" name="email" id="email" placeholder="Placeholder">
+                        <label for="email">Email</label>
+                        <input class="form-control" type="email" name="email" id="email" placeholder="Insira seu email"
+                        [(ngModel)]='userLogin.email'>
                     </div>
 
                     <div class="form-group">
-                        <label for="nome">senha</label>
-                        <input class="form-control" type="password" name="senha" id="senha" placeholder="Placeholder">
+                        <label for="senha">senha</label>
+                        <input class="form-control" type="password" name="senha" id="senha" placeholder="Insira seu senha"
+                        [(ngModel)]='userLogin.senha'>
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-danger mr-5" routerLink="/entrar">Entrar</button> 
+                        <button type="submit" class="btn btn-danger mr-5" (click)='login()'>Entrar</button> 
                     </div>
+                    
+                    <hr class="mt-5 mb-5">
+                <p class="text-center">
+                    Não tem uma conta? <a href="" routerLink='/cadastrar'>Cadastre-se</a>
+                </p>
 
                 </div>
         </div>
