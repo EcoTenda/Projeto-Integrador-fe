@@ -11,4 +11,5 @@ export class Produto {
     public valor: number;
     public categoria: Categoria;
     public usuario: Usuario;
+    public imagem: string;
 }

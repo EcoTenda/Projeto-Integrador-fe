@@ -37,35 +37,30 @@
         <h3 class="text-center my-3">Categorias</h3>
     </div>
     <div>
-        <div class="row">
-            <div class="col-md-3">
-                <img src="../../assets/img/pro1.jpg" alt="imagem" width="200px" height="200px"
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-2.5 my-5" *ngFor="let item of listaCategoria">
+                <img src="{{item.imagem}}" alt="imagem" width="170px" height="170px"
                     class="img-fluid rounded-circle">
-                <p class="m-0 text-center font-weight-bold text-dark fs-16">Categoria</p>
+                <p class="m-0 text-center font-weight-bold text-dark fs-16">{{item.nome}}</p>
             </div>
-            <div class="col-md-3">
-                <img src="../../assets/img/pro1.jpg" alt="imagem" width="200px" height="200px"
-                    class="img-fluid rounded-circle">
-                <p class="m-0 text-center font-weight-bold text-dark fs-16">Categoria</p>
-            </div>
-            <div class="col-md-3">
-                <img src="../../assets/img/pro1.jpg" alt="imagem" width="200px" height="200px"
-                    class="img-fluid rounded-circle">
-                <p class="m-0 text-center font-weight-bold text-dark fs-16">Categoria</p>
-            </div>
-            <div class="col-md-3">
-                <img src="../../assets/img/pro1.jpg" alt="imagem" width="200px" height="200px"
-                    class="img-fluid rounded-circle">
-                <p class="m-0 text-center font-weight-bold text-dark fs-16">Categoria</p>
-            </div>
-            <div class="col-md-3">
-                <img src="../../assets/img/pro1.jpg" alt="imagem" width="200px" height="200px"
-                    class="img-fluid rounded-circle">
-                <p class="m-0 text-center font-weight-bold text-dark fs-16">Categoria</p>
-            </div>
-
-
         </div>
 
+    </div>
+
+    <div>
+        <h3 class="text-center my-3">Produtos</h3>
+    </div>
+    <div class="row">
+        <div class="col-md-4" *ngFor="let item of listaProdutos">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{item.imagem}}" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">{{item.nome}}</h5>
+                    <p class="card-text">{{item.descricao}}</p>
+                    <p class="card-text">Preço: R${{item.valor}}</p>
+                    <a href="#" class="btn btn-primary">Visitar</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
