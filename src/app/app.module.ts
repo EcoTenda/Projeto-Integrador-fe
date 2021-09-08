@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+import { ConfiguracaoComponent } from './configuracao/configuracao.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     SobreComponent,
     FooterComponent,
     LandingPageComponent,
-    LoginComponent
+    LoginComponent,
+    ConfiguracaoComponent
   ],
   imports: [
     BrowserModule,
