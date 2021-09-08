@@ -1,6 +1,8 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/internal/Observable';
 import { environment } from 'src/environments/environment.prod';
+import { Categoria } from '../model/Categoria';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +17,9 @@ export class CategoriaService {
     headers: new HttpHeaders().set('Authorization', environment.token)
   }
 
+  getAllCategoria(): Observable<Categoria[]>{
+    return this.http.get<Categoria[]>('https://ecotendabe.herokuapp.com/categoria')
+  }
   
 
 }
