@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Produto } from '../model/Produto';
+import { ProdutoService } from '../service/produto.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
-  constructor() { }
+  produto: Produto = new Produto();
+  listaProdutos: Produto[];
 
-  ngOnInit(): void {
+  constructor(
+    private produtoService: ProdutoService,
+  ) { }
+
+  ngOnInit() {
+    this. getProdutos();
   }
 
+  getProdutos(){
+    this.produtoService.getAllProduto().subscribe((resp: Produto[])=>{
+      this.listaProdutos = resp
+    })
+  }
 }
