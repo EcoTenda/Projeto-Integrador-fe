@@ -21,4 +21,7 @@ export class ProdutoService {
     return this.http.get<Produto[]>('https://ecotendabe.herokuapp.com/produtos')
   }
 
+  postProduto(produto: Produto): Observable<Produto>{
+    return this.http.post<Produto>('https://ecotendabe.herokuapp.com/produtos', produto, this.token)
+  }
 }

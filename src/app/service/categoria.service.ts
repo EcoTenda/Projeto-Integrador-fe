@@ -21,8 +21,13 @@ export class CategoriaService {
     return this.http.get<Categoria[]>('https://ecotendabe.herokuapp.com/categoria')
   }
   
+  findById(id: number): Observable<Categoria> {
+    return this.http.get<Categoria>(`https://ecotendabe.herokuapp.com/categoria/${id}`, this.token)
+  }
+
   postCategoria(categoria: Categoria): Observable<Categoria>{
     return this.http.post<Categoria>('https://ecotendabe.herokuapp.com/categoria', categoria, this.token)
   }
 
+ 
 }

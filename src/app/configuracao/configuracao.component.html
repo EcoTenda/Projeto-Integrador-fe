@@ -1,139 +1,176 @@
 <div class="container">
 
-    <h1 class="text-center my-5">Configurações</h1>
+  <h1 class="text-center my-5">Configurações</h1>
 
-    <div class="container mt-2 mb-2">
-        <div class="row">
-            <div class="col-md-4 mb-5 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Nova Categoria</h5>
-                      <div class="d-flex justify-content-end">
-                          <button class="btn btn-success mr-2" data-toggle="modal" data-target="#novaCategoria">Nova categoria</button>
-                      </div>
-                </div>
-                </div>
+  <div class="container mt-2 mb-2">
+    <div class="row">
+      <div class="col-md-4 mb-5 d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Nova Categoria</h5>
+            <div class="d-flex justify-content-end">
+              <button class="btn btn-success mr-2" data-toggle="modal" data-target="#novaCategoria">Nova
+                categoria</button>
             </div>
-        
-    
-            <div class="col-md-4 mb-5 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Cadastrar Novo Produto</h5>
-                      <div class="d-flex justify-content-end">
-                          <button class="btn btn-success mr-2" data-toggle="modal" data-target="#novoProduto">Cadastrar</button>
-                      </div>
-                </div>
-            </div>
-            </div>
+          </div>
+        </div>
+      </div>
 
-            <div class="col-md-4 mb-5 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Editar Usuario</h5>
-                      <div class="d-flex justify-content-end">
-                          <button class="btn btn-success mr-2" data-toggle="modal" data-target="#novoProduto">Editar</button>
-                      </div>
-                </div>
+
+      <div class="col-md-4 mb-5 d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Cadastrar Produto</h5>
+            <div class="d-flex justify-content-end">
+              <button class="btn btn-success mr-2" data-toggle="modal" data-target="#novoProduto">Cadastrar</button>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-5 d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Editar Usuario</h5>
+            <div class="d-flex justify-content-end">
+              <button class="btn btn-success mr-2" data-toggle="modal" data-target="#novoProduto">Editar</button>
             </div>
+          </div>
+        </div>
+      </div>
 
     </div>
 
-        <div class="row">
-    
-            <div class="col-md-4 mb-5 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Editar categorias</h5>
-                      <div class="d-flex justify-content-end">
-                          <a href="#" class="btn btn-primary">Visualizar</a>
-                      </div>
-                    </div>
-                </div>
+    <div class="row">
+
+      <div class="col-md-4 mb-5 d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Editar categorias</h5>
+            <div class="d-flex justify-content-end">
+              <a href="#" class="btn btn-primary">Visualizar</a>
             </div>
-    
-            <div class="col-md-4 mb-5 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Seus produtos favoritos</h5>
-                      <div class="d-flex justify-content-end">
-                        <a href="#" class="btn btn-primary">Visualizar</a>    
-                      </div>
-                    </div>
-                  </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-5 d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Seus produtos favoritos</h5>
+            <div class="d-flex justify-content-end">
+              <a href="#" class="btn btn-primary">Visualizar</a>
             </div>
-    
-            <div class="col-md-4 mb-5 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">Informações do Usuario</h5>
-                    <div class="d-flex justify-content-end">
-                        <a href="#" class="btn btn-primary ">Visualizar</a>
-                    </div>
-                  </div>
-                </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-5 d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Informações do Usuario</h5>
+            <div class="d-flex justify-content-end">
+              <a href="#" class="btn btn-primary ">Visualizar</a>
             </div>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
 
 
-<!--modal-->
+  <!-------------------------modal novo produto--------------------------->
 
-<div class="modal fade" id="novoProduto" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+
+  <div class="modal fade" id="novoProduto" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Cadastre um novo produto</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-              <span aria-hidden="true">&times;</span>
-            </button>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cadastarProdutos">Cadastrar novo produto</h5>
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <input [(ngModel)]="produto.nome" type="text" class="form-control"
+              placeholder="Digite o nome do produto" id="nomePt">
           </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Coloque o nome do produto</label>
-                <input type="text" class="form-control" id="recipient-name">
-              </div>
-            </form>
+
+          <div class="form-group">
+            <input [(ngModel)]="produto.descricao" type="text" class="form-control" placeholder="Digite uma descrição"
+              id="descricaoPt">
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-success">Cadastrar</button>
+
+          <div class="form-group">
+            <input [(ngModel)]="produto.valor" type="number" class="form-control"
+              placeholder="Digite o valor do produto" id="valorPt">
+          </div>
+
+          <div class="form-group">
+            <input [(ngModel)]="produto.quantidade" type="number" class="form-control"
+              placeholder="Adicione a quantidade de produtos" id="quantidadePt">
+          </div>
+
+          <div class="form-group">
+            <input [(ngModel)]="produto.garantia" type="text" class="form-control"
+              placeholder="Digite o tempo de garantia" id="garantiaPt">
+          </div>
+
+          <div class="form-group">
+            <input [(ngModel)]="produto.imagem" type="text" class="form-control"
+              placeholder="Adicione a url da imagem" id="imagemPt">
+          </div>
+
+          <label for="texto">Escolha uma categoria ou <a data-dismiss="modal">cadastre uma nova</a>:</label>
+            <select name="categoria" id="categoria" class="form-control" [(ngModel)]='idCategoria' (change)='findByIdCategoria()'>
+              <option *ngFor='let item of listaCategoria' value="{{item.id}}"> {{item.nome}}
+              </option>
+            </select>
+
+          <div class="d-flex justify-content-and">
+            <div class="button btn btn-success" (click)="criarProduto()"> Cadastrar</div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
 
-<!-------------------------modal nova categoria--------------------------->
+  <!-------------------------modal nova categoria--------------------------->
 
-    <div class="modal fade" id="novaCategoria" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Crie uma nova categoria</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="form-group">
-                  <input [(ngModel)]="categoria.nome" type="text" class="form-control" placeholder="Digite o nome da categoria" id="nome">
-              </div>
-
-              <div class="form-group">
-                <input [(ngModel)]="categoria.descricao" type="text" class="form-control" placeholder="Digite uma descrição" id="descricao">
-            </div>
-
-            <div class="form-group">
-              <input [(ngModel)]="categoria.imagem" type="text" class="form-control" placeholder="Adicione a url da imagem" id="url">
+  <div class="modal fade" id="novaCategoria" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Crie uma nova categoria</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <input [(ngModel)]="categoria.nome" type="text" class="form-control"
+              placeholder="Digite o nome da categoria" id="nome">
           </div>
 
-              <div class="d-flex justify-content-and">
-                  <div class="button btn btn-success" (click)="criarCategoria()"> Cadastrar</div>
-              </div>
-              </div>
-            </div>
+          <div class="form-group">
+            <input [(ngModel)]="categoria.descricao" type="text" class="form-control" placeholder="Digite uma descrição"
+              id="descricao">
+          </div>
+
+          <div class="form-group">
+            <input [(ngModel)]="categoria.imagem" type="text" class="form-control"
+              placeholder="Adicione a url da imagem" id="url">
+          </div>
+
+          <div class="d-flex justify-content-and">
+            <div class="button btn btn-success" (click)="criarCategoria()"> Cadastrar</div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
