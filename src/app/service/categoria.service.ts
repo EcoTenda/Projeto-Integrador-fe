@@ -29,5 +29,8 @@ export class CategoriaService {
     return this.http.post<Categoria>('https://ecotendabe.herokuapp.com/categoria', categoria, this.token)
   }
 
+  putCategoria(categoria: Categoria): Observable<Categoria>{
+    return this.http.put<Categoria>('https://ecotendabe.herokuapp.com/categoria', categoria, this.token)
+  }
  
 }

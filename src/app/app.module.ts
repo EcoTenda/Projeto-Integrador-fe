@@ -12,6 +12,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { ConfiguracaoComponent } from './configuracao/configuracao.component';
+import { CategoriaComponent } from './categoria/categoria.component';
+import { EditCategoriaComponent } from './edit/edit-categoria/edit-categoria.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ConfiguracaoComponent } from './configuracao/configuracao.component';
     FooterComponent,
     LandingPageComponent,
     LoginComponent,
-    ConfiguracaoComponent
+    ConfiguracaoComponent,
+    CategoriaComponent,
+    EditCategoriaComponent
   ],
   imports: [
     BrowserModule,
