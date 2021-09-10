@@ -33,5 +33,8 @@ export class ProdutoService {
     return this.http.put<Produto>('https://ecotendabe.herokuapp.com/produtos', produto, this.token)
   }
 
+  deleteProduto(id: number){
+    return this.http.delete<Produto>(`https://ecotendabe.herokuapp.com/produtos/${id}`, this.token)
+  }
   
 }

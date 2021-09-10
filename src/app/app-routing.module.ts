@@ -4,6 +4,7 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { ConfiguracaoComponent } from './configuracao/configuracao.component';
 import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
+import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 import { EditCategoriaComponent } from './edit/edit-categoria/edit-categoria.component';
 import { EditProdutoComponent } from './edit/edit-produto/edit-produto.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
@@ -23,7 +24,8 @@ const routes: Routes = [
   {path: 'categoria-edit/:id' , component:EditCategoriaComponent},
   {path: 'categoria-delete/:id' , component:CategoriaDeleteComponent},
   {path: 'produto-edit/:id', component:EditProdutoComponent},
-  {path: 'produto', component:ProdutoComponent}
+  {path: 'produto', component:ProdutoComponent},
+  {path: 'produto-delete/:id', component:ProdutoDeleteComponent}
 ];
 
 @NgModule({

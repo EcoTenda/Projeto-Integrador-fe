@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 my-5">
+            <h1 class="text-center text-secondary">Apagar Produto</h1>
+        </div>
+    </div>
+
+    <div class="row mb-5 ">
+        <div class="col-md-12">
+            <h4 class="text-center text-secondary">Você tem certeza que deseja apagar esse Produto?</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 d-flex justify-content-center">
+            <h5 class="text-center text-primary">Categoria: {{produto.nome}}</h5>
+            <img src="{{produto.imagem}}" width="200px" height="200px" alt="">
+        </div>
+    </div>
+
+    <div class="row my-5">
+        <div class="col-md-12 d-flex justify-content-center">
+            <button class="btn btn-danger mr-4" routerLink="/produto">Não</button>
+            <button class="btn btn-success" (click)="apagar()">Sim</button>
+        </div>
+    </div>
+</div>
