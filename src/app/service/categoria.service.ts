@@ -33,4 +33,7 @@ export class CategoriaService {
     return this.http.put<Categoria>('https://ecotendabe.herokuapp.com/categoria', categoria, this.token)
   }
  
+  deleteCategoria(id: number){
+    return this.http.delete<Categoria>(`https://ecotendabe.herokuapp.com/categoria/${id}`, this.token)
+  }
 }

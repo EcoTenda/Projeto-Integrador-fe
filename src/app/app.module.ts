@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { ConfiguracaoComponent } from './configuracao/configuracao.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { EditCategoriaComponent } from './edit/edit-categoria/edit-categoria.component';
+import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { EditCategoriaComponent } from './edit/edit-categoria/edit-categoria.com
     LoginComponent,
     ConfiguracaoComponent,
     CategoriaComponent,
-    EditCategoriaComponent
+    EditCategoriaComponent,
+    CategoriaDeleteComponent
   ],
   imports: [
     BrowserModule,
