@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment.prod';
 import { Produto } from '../model/Produto';
 import { ProdutoService } from '../service/produto.service';
 
@@ -13,11 +15,16 @@ export class ProdutoComponent implements OnInit {
   listaProdutos: Produto[];
 
   constructor(
-    private produtoService: ProdutoService
+    private produtoService: ProdutoService,
+    private router: Router
   ) { }
 
   ngOnInit(){
   this.findByProdutos();
+
+  if(environment.token == ''){
+    this.router.navigate(['/login']);
+  }
   }
 
   findByProdutos(){

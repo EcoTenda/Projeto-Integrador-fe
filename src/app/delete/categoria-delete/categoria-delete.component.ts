@@ -26,6 +26,8 @@ export class CategoriaDeleteComponent implements OnInit {
       this.router.navigate(['/login']);
     }
 
+    this.categoriaService.refreshToken();
+
     this.idCategoria = this.route.snapshot.params['id'];
     this.findById(this.idCategoria)
   }

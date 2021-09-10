@@ -16,6 +16,13 @@ export class CategoriaService {
   token = {
     headers: new HttpHeaders().set('Authorization', environment.token)
   }
+  
+  refreshToken(){
+    this.token = {
+      headers: new HttpHeaders().set('Authorization', environment.token)
+    }
+  }
+
 
   getAllCategoria(): Observable<Categoria[]>{
     return this.http.get<Categoria[]>('https://ecotendabe.herokuapp.com/categoria')

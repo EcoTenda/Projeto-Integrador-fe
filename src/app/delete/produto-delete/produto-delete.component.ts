@@ -26,6 +26,8 @@ export class ProdutoDeleteComponent implements OnInit {
       this.router.navigate(['/login']);
     }
 
+    this.produtoService.refreshToken();
+
     this.idProduto = this.route.snapshot.params['id']
     this.findById(this.idProduto)
   }

@@ -33,6 +33,9 @@ export class ConfiguracaoComponent implements OnInit {
     if (environment.token == '') {
       this.router.navigate(['/login'])}
 
+      this.produtoService.refreshToken();
+      this.categoriaService.refreshToken();
+
       this.getAllCategorias();
   }
 
@@ -40,6 +43,7 @@ export class ConfiguracaoComponent implements OnInit {
     this.categoriaService.postCategoria(this.categoria).subscribe((resp: Categoria) => {
       this.categoria = resp
       alert('Categoria criada com sucesso!')
+      this.categoria = new Categoria();
     })
   }
 

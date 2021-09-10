@@ -24,6 +24,7 @@ export class EditCategoriaComponent implements OnInit {
     if (environment.token == '') {
       this.router.navigate(['/login']);
     }
+    this.categoriaService.refreshToken();
     this.id = this.route.snapshot.params['id'];
 
     this.findByIdCat(this.id)
@@ -32,7 +33,6 @@ export class EditCategoriaComponent implements OnInit {
   findByIdCat(id: number){
     return this.categoriaService.findById(id).subscribe((resp: Categoria)=>{
       this.categoria = resp
-      this.categoria.id = this.id //Adptação para conseguir editar, Não foi preciso em produtos
     })
   }
 
