@@ -32,7 +32,7 @@ export class EditCategoriaComponent implements OnInit {
   findByIdCat(id: number){
     return this.categoriaService.findById(id).subscribe((resp: Categoria)=>{
       this.categoria = resp
-      this.categoria.id = this.id
+      this.categoria.id = this.id //Adptação para conseguir editar, Não foi preciso em produtos
     })
   }
 

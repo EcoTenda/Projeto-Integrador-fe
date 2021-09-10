@@ -21,7 +21,17 @@ export class ProdutoService {
     return this.http.get<Produto[]>('https://ecotendabe.herokuapp.com/produtos')
   }
 
+  getIdProduto(id: number): Observable<Produto>{
+    return this.http.get<Produto>(`https://ecotendabe.herokuapp.com/produtos/${id}`, this.token)
+  }
+
   postProduto(produto: Produto): Observable<Produto>{
     return this.http.post<Produto>('https://ecotendabe.herokuapp.com/produtos', produto, this.token)
   }
+
+  putProduto(produto: Produto): Observable<Produto>{
+    return this.http.put<Produto>('https://ecotendabe.herokuapp.com/produtos', produto, this.token)
+  }
+
+  
 }

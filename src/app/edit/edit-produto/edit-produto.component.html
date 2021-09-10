@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center text-secondary">Atualizar Produto</h1>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+            <div class="modal-body">
+                <div class="form-group">
+                  <label for="titulo">Nome</label>
+                  <input [(ngModel)]="produto.nome" type="text" class="form-control"
+                    id="nomePt">
+                </div>
+      
+                <div class="form-group">
+                  <label for="titulo">Descrição</label>
+                  <input [(ngModel)]="produto.descricao" type="text" class="form-control"
+                    id="descricaoPt">
+                </div>
+      
+                <div class="form-group">
+                  <label for="titulo">Valor</label>
+                  <input [(ngModel)]="produto.valor" type="number" class="form-control"
+                     id="valorPt">
+                </div>
+      
+                <div class="form-group">
+                  <label for="titulo">Quantidade</label>
+                  <input [(ngModel)]="produto.quantidade" type="number" class="form-control"
+                     id="quantidadePt">
+                </div>
+      
+                <div class="form-group">
+                  <label for="titulo">Garantia</label>
+                  <input [(ngModel)]="produto.garantia" type="text" class="form-control"
+                    id="garantiaPt">
+                </div>
+      
+                <div class="form-group">
+                  <label for="titulo">Adicione a url da imagem</label>
+                  <input [(ngModel)]="produto.imagem" type="text" class="form-control"
+                    id="imagemPt">
+                </div>
+            <div class="d-flex justify-content-center mb-5">
+                <button class="btn btn-danger mr-4" routerLink="/produto">Cancelar</button>
+                <button class="btn btn-success" (click)="atualizar()">Atualizar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
