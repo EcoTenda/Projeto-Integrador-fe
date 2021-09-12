@@ -17,3 +17,9 @@
 .fa-github:hover{
     color: #161B22;
 }
+
+.background-image{
+    background: url(https://i.imgur.com/eGt4aSo.png);
+    background-size: auto;
+}
+
