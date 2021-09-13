@@ -1,0 +1,26 @@
+.font-color {
+    color: #5E3519;
+}
+
+.fs-icon {
+    font-size: 20pt;
+}
+
+.fa-instagram:hover{
+    color: #c13584;
+}
+
+.fa-facebook-square:hover{
+    color: #3b5998;
+}
+
+.fa-github:hover{
+    color: #161B22;
+}
+
+.background-image{
+    background-image: url(https://i.imgur.com/vw3Fkyg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
