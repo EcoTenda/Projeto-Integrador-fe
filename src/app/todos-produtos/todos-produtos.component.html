@@ -1,0 +1,30 @@
+<div class="jumbotron jumbotron-fluid m-0">
+    <div class="container">
+        <h1 class="display-4">Produtos Sustentáveis</h1>
+        <p class="lead">Nossos produtos possuem como matéria-prima recursos provenientes do manejo sustentável, ou seja, respeitando critérios ambientais e sociais preestabelecidos, que garantem a renovação natural dos ecossistemas.
+        </p>
+    </div>
+</div>
+<div class="container ">
+    
+      <div class="row d-flex justify-content-center">
+          <div class="col-md-4">
+            <input class="form-control  my-5" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+          </div> 
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-3 my-5" *ngFor="let item of listaProdutos">
+            <div class="card ">
+                <div height="10px">
+                    <img class="card-img-top img-tmh" src="{{item.imagem}}" alt="Imagem de capa do card">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{item.nome}}</h5>
+                    <p class="card-text">Preço: R${{item.valor}}</p>
+                    <a href="#" [routerLink]="['/tela-compra', item.id]" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
