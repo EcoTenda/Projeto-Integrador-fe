@@ -33,14 +33,14 @@ export class AuthService {
     usuario)
 }
 
-// logado(){
-//   let ok: boolean = false
+logado(){
+  let ok: boolean = false
 
-//   if(environment.token != '') {
-//     ok = true
-//   }
+  if(environment.token != '') {
+    ok = true
+  }
   
-//   return ok
-// }
+  return ok
+}
 
 }
