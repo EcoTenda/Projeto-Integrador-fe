@@ -6,7 +6,8 @@
 }
 
 #segunda-coluna {
-    background-color: crimson;
+    background-color: rgb(208, 252, 200); 
+    padding: 5rem;
 }
 
 #titulo {
@@ -19,4 +20,21 @@
 #introducao {
     font-family: 'Poppins', sans-serif;
     font-size: 1.7rem;
+}
+
+#img {
+    background-image: url("https://i.imgur.com/ddNnROy.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80vh;
+
+}
+
+.cadastrar-button {
+    width: 12rem;
+}
+
+.cancelar-button {
+    width: 12rem;
 }
