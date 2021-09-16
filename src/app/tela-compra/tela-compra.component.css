@@ -2,3 +2,7 @@
     height: 300px;
     width: 100%;
 }
+
+.borda{
+    border-style:double
+}
