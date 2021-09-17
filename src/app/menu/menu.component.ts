@@ -12,15 +12,12 @@ export class MenuComponent implements OnInit {
  
   nome = environment.nome
   foto = environment.foto
-  id = environment.id
-
+  
   testefalso = false;
   testeverdade = true;
 
 
-  constructor(
-    private auth: AuthService
-  ) { }
+  constructor(public auth: AuthService) { }
 
   ngOnInit( ){
   
