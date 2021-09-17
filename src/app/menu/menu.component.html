@@ -33,16 +33,16 @@
 
 
 
-      <ul *ngIf='id == 0 '>
-        <li><i class="fa fa-user" aria-hidden="true"></i></li>
+      <ul *ngIf="auth.logado() == false">
+        <li><i class="fa fa-user nav-link" aria-hidden="true"></i></li>
 
-        <li><a class="m-0 font-weight-bold fs-16">Login </a></li>
+        <li><a class="m-0 font-weight-bold  fs-16">Login </a></li>
       </ul>
 
 
-      <ul *ngIf='id != 0 '>
+      <ul *ngIf="auth.logado()">
         <li>
-          <img src="{{foto}}{{id}}" alt="imagem do user" width="50px" height="50px" class="img-fluid rounded-circle">
+          <img src="{{foto}}" alt="imagem do user" width="50px" height="50px" class="img-fluid rounded-circle">
         </li>
 
         <li>
