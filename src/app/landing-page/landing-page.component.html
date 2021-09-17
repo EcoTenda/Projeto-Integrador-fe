@@ -33,7 +33,7 @@
     </a>
 </div>
 <div class="container">
-    <div>
+    <div id="categoria-inicio">
         <h3 class="text-center my-3">Categorias</h3>
     </div>
     <div>
@@ -50,15 +50,16 @@
     <div>
         <h3 class="text-center my-3">Produtos</h3>
     </div>
-    <div class="row">
-        <div class="col-md-4" *ngFor="let item of listaProdutos">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{{item.imagem}}" alt="Imagem de capa do card">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-3 my-5" *ngFor="let item of listaProdutos">
+            <div class="card ">
+                <div height="10px">
+                    <img class="card-img-top img-tmh" src="{{item.imagem}}" alt="Imagem de capa do card">
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">{{item.nome}}</h5>
-                    <p class="card-text">{{item.descricao}}</p>
                     <p class="card-text">Preço: R${{item.valor}}</p>
-                    <a href="#" class="btn btn-primary">Visitar</a>
+                    <a href="#" [routerLink]="['/tela-compra', item.id]" class="btn btn-primary">Conferir</a>
                 </div>
             </div>
         </div>

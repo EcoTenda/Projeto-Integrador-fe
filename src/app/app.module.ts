@@ -20,6 +20,7 @@ import { ProdutoComponent } from './produto/produto.component';
 import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 import { TodosProdutosComponent } from './todos-produtos/todos-produtos.component';
 import { TelaCompraComponent } from './tela-compra/tela-compra.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,10 @@ import { TelaCompraComponent } from './tela-compra/tela-compra.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+   { provide: LocationStrategy,
+    useClass: HashLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
