@@ -1,32 +1,41 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12  d-flex justify-content-center background-image" id="cadastro-background">            
-            <div class="row m-5" id="colunas">
-                <div class="col-md-12 bg-light" id="primeira-coluna">
-                    <h1 class="d-flex justify-content-center">Entrar</h1>
-                    <h5>Faça seu login e vamos as compras!</h5>
+
+        <div class="col-md-7" id="segunda-coluna">
+            <div class="row">
+                <div class="col-md-12" id="img"></div>
+            </div>
+        </div>
+
+        <div class="col-md-5 d-flex justify-content-center" id="primeira-coluna">
+            <div class="row m-5">
+                <div class="col-md-12" id="primeira-coluna">
+
+                    <h1 class="d-flex justify-content-center" id="titulo">Entrar</h1>
+                    <h5 id="subtitulo">Faça seu login e vamos as compras!</h5>
 
                     <div class="form-group">
                         <label for="email">E-mail</label>
                         <input class="form-control" type="email" name="email" id="email" placeholder="Insira seu e-mail"
-                        [(ngModel)]='userLogin.email'>
+                            [(ngModel)]='userLogin.email'>
                     </div>
 
                     <div class="form-group">
                         <label for="senha">Senha</label>
-                        <input class="form-control" type="password" name="senha" id="senha" placeholder="Insira seu senha"
-                        [(ngModel)]='userLogin.senha'>
+                        <input class="form-control" type="password" name="senha" id="senha"
+                            placeholder="Insira seu senha" [(ngModel)]='userLogin.senha'>
                     </div>
-                    <div>
-                        <button type="submit" class="btn btn-success mr-5" (click)='login()'>Entrar</button> 
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-success mt-2 entrar" (click)='login()'>Entrar</button>
                     </div>
-                    
+
                     <hr class="mt-5 mb-5">
-                <p class="text-center">
-                    Não tem uma conta? <a href="" routerLink='/cadastrar'>Cadastre-se</a>
-                </p>
+                    <p class="text-center">
+                        Não tem uma conta? <a href="" routerLink='/cadastrar'>Cadastre-se</a>
+                    </p>
 
                 </div>
+            </div>
         </div>
     </div>
-</div>
+</div> 
