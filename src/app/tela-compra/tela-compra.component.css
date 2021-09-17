@@ -4,5 +4,11 @@
 }
 
 .borda{
-    border-style:double
+    border-style: groove;
+    border-radius: 8px;
+}
+
+.tamanho-icone{
+    width: 5rem;
+    height: auto;
 }

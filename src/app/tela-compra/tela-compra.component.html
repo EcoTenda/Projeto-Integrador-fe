@@ -1,11 +1,42 @@
-<div class="container">
-    <div class="row">
+<div style="background-color: lightgray;">
+<div class="container" style="background-color: white"> 
+    <div class="row" >
         <div class="col-md-7 my-5">
-            <img src="{{produto.imagem}}" class="img-responsive borda" alt="">
-            <h3 class="mt-5">{{produto.nome}}</h3>
-            <h5>{{produto.descricao}}</h5>
+
+            <div class="card" style="width: 25rem;">
+                <img src="{{produto.imagem}}" class="img-responsive" alt="">
+                <div class="card-body">
+                    <p> {{produto.descricao}}</p>
+                </div>
+              </div>
+           
         </div>
-        <div class="col-md-5"></div>
+        <div class="col-md-5">
+            <h3 class="mt-5">{{produto.nome}}</h3>
+           
+            <p>Valor: R${{produto.valor}}</p>
+            <button class="btn btn-info mb-3">Comprar</button>
+            <p>Formas de pagamento:</p>
+            <div class="row mx-3">
+                <!-- <figure>
+                    <img src="https://i.imgur.com/FGAprYs.png" alt=""  class="tamanho-icone"> 
+                    <figcaption>Cartão de crédito</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://i.imgur.com/0gGDLnX.png" alt=""  class="tamanho-icone mx-3">
+                    <figcaption>Boleto</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://i.imgur.com/kFQ1YkU.png" alt="" class="tamanho-icone">
+                       <figcaption>Pix</figcaption>
+                    </figure> -->
+                
+                <img src="https://i.imgur.com/FGAprYs.png" alt=""  class="tamanho-icone">
+                <img src="https://i.imgur.com/0gGDLnX.png" alt=""  class="tamanho-icone mx-3">
+                <img src="https://i.imgur.com/kFQ1YkU.png" alt="" class="tamanho-icone">
+            </div>
+        </div>
     </div>
+</div>
 </div>
 
