@@ -51,6 +51,12 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="form-group">
+                        <label for="foto">URL da foto</label>
+                        <input class="form-control" type="text" name="foto" id="foto" placeholder="Insira a URL de sua foto"
+                            [(ngModel)]='usuario.foto'>
+                    </div>
         
                     <div class="form-group">
                         <label for="tipo">Tipo de Usuário</label>
@@ -77,94 +83,3 @@
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div class="container-fluid">
-    <div class="row">          
-            <div class="row mt-5 mb-5" id="colunas">
-                <div class="col-md-8 rounded" id="primeira-coluna">
-                    <h1>Crie sua conta na EcoTenda</h1>
-
-                    <div class="form-group">
-                        <label for="nome">Nome</label>
-                        <input class="form-control" type="text" name="nome" id="nome" placeholder="Insira seu nome completo" [(ngModel)] = 'usuario.nome'>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input class="form-control" type="email" name="email" id="email" placeholder="Insira seu email" [(ngModel)] = 'usuario.email'>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="cpf">CPF</label>
-                        <input class="form-control" type="text" name="cpf" id="cpf" placeholder="Insira seu CPF" 
-                        [(ngModel)] = 'usuario.cpf'> 
-                    </div>
-
-                    <div class="form-group">
-                        <label for="senha">Senha</label>
-                        <input class="form-control" type="password" name="senha" id="senha" placeholder="Insira sua senha" (input)='confirmSenha($event)'>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="confirmSenha">Confirmar Senha</label>
-                        <input class="form-control" type="password" name="senha" id="senha" placeholder="Confirme sua senha" [(ngModel)] = 'usuario.senha'>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="dataNascimento">Data de Nascimento</label>
-                        <input class="form-control" type="date" name="dataNascimento" id="dataNascimento"
-                        [(ngModel)] = 'usuario.dataNascimento'>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="tipo">Tipo de Usuário</label>
-                        <select class="form-control" name="tipo" id="tipo" (change)='tipoUser($event)'>
-                            <option>Selecione um tipo de usuário:</option>
-                            <option value="Padrão">Padrão</option>
-                            <option value="Admin">Administrador</option>
-                        </select>
-                    </div>
-
-                    <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn btn-danger mr-5" routerLink="/login">Cancelar</button> 
-                        <button type="submit" class="btn btn-danger mr-5" (click)='cadastrar()'>Cadastrar</button> 
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-4 bg-danger rounded" id="segunda-coluna">
-                    Aqui vai ficar uma foto, de preferência com algum item sustentável
-                </div>
-            </div>
-    </div>
-</div> -->
