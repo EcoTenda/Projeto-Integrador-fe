@@ -1,65 +1,85 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12" id="cadastro-background">            
-            <div class="row" id="colunas">
-                <div class="col-md-8 bg-secondary" id="primeira-coluna">
-                    <h1>Aqui vai ficar ficar algum título para o cadastro</h1>
-                    <h4>Aqui vai ficar um sub-título para o cadastro</h4>
+        <div class="col-md-5" id="primeira-coluna">
+            
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10">
+                    <h1 id="titulo">FAÇA SEU CADASTRO</h1>
 
                     <div class="form-group">
                         <label for="nome">Nome</label>
-                        <input class="form-control" type="text" name="nome" id="nome" placeholder="Insira seu nome completo" [(ngModel)] = 'usuario.nome'>
+                        <input class="form-control" type="text" name="nome" id="nome" placeholder="Insira seu nome completo"
+                            [(ngModel)]='usuario.nome'>
                     </div>
-
+        
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input class="form-control" type="email" name="email" id="email" placeholder="Insira seu email" [(ngModel)] = 'usuario.email'>
+                        <input class="form-control" type="email" name="email" id="email" placeholder="Insira seu email"
+                            [(ngModel)]='usuario.email'>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="senha">Senha</label>
+                                <input class="form-control" type="password" name="senha" id="senha"
+                                    placeholder="Insira sua senha" (input)='confirmSenha($event)'>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="confirmSenha">Confirmar Senha</label>
+                                <input class="form-control" type="password" name="confirmSenha" id="confirmSenha"
+                                    placeholder="Confirme sua senha" [(ngModel)]='usuario.senha'>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cpf">CPF</label>
+                                <input class="form-control" type="text" name="cpf" id="cpf" placeholder="Insira seu CPF"
+                                    [(ngModel)]='usuario.cpf'>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="dataNascimento">Data de Nascimento</label>
+                                <input class="form-control" type="date" name="dataNascimento" id="dataNascimento"
+                                    [(ngModel)]='usuario.dataNascimento'>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="cpf">CPF</label>
-                        <input class="form-control" type="text" name="cpf" id="cpf" placeholder="Insira seu CPF" 
-                        [(ngModel)] = 'usuario.cpf'> 
+                        <label for="foto">URL da foto</label>
+                        <input class="form-control" type="text" name="foto" id="foto" placeholder="Insira a URL de sua foto"
+                            [(ngModel)]='usuario.foto'>
                     </div>
-
-                    <div class="form-group">
-                        <label for="senha">Senha</label>
-                        <input class="form-control" type="password" name="senha" id="senha" placeholder="Insira sua senha" (input)='confirmSenha($event)'>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="confirmSenha">Confirmar Senha</label>
-                        <input class="form-control" type="password" name="senha" id="senha" placeholder="Confirme sua senha" [(ngModel)] = 'usuario.senha'>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="dataNascimento">Data de Nascimento</label>
-                        <input class="form-control" type="date" name="dataNascimento" id="dataNascimento"
-                        [(ngModel)] = 'usuario.dataNascimento'>
-                    </div>
-
+        
                     <div class="form-group">
                         <label for="tipo">Tipo de Usuário</label>
                         <select class="form-control" name="tipo" id="tipo" (change)='tipoUser($event)'>
                             <option>Selecione um tipo de usuário:</option>
                             <option value="Padrão">Padrão</option>
-                            <option value="Admin">Administrador</option>
+                            <option value="Comprador">Comprador</option>
+                            <option value="Vendedor">Vendedor</option>
                         </select>
                     </div>
-
-                    <div>
-                        <button type="submit" class="btn btn-danger mr-5" routerLink="/login">Cancelar</button> 
-                        <button type="submit" class="btn btn-danger mr-5" (click)='cadastrar()'>Cadastrar</button> 
-
+        
+                    <div class="d-flex justify-content-center mb-3">
+                        <button type="submit" class="btn btn-danger mr-5 mt-3 cancelar-button" routerLink="/login">Cancelar</button>
+                        <button type="submit" class="btn btn-success mt-3 cadastrar-button" (click)='cadastrar()'>Cadastrar</button>
                     </div>
-
-                </div>
-
-                <div class="col-md-4 bg-danger" id="segunda-coluna">
-                    Aqui vai ficar uma foto, de preferência com algum item sustentável
                 </div>
             </div>
+        </div>
 
+        <div class="col-md-7" id="segunda-coluna">
+            <div class="row">
+                <div class="col-md-12" id="img"></div>
+            </div>
         </div>
     </div>
 </div>

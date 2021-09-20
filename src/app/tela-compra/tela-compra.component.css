@@ -1,0 +1,18 @@
+.img-responsive{
+    height: 300px;
+    width: 100%;
+}
+
+.borda{
+    border-style: groove;
+    border-radius: 8px;
+}
+
+.tamanho-icone{
+    width: 3rem;
+    height: auto;
+}
+
+.botao{
+    width: 50%;
+}

@@ -1,32 +1,41 @@
 <div class="container-fluid">
-    <div class="row d-flex justify-content-center">
-        <div class="col-md-12" id="cadastro-background">            
-            <div class="row" id="colunas">
-                <div class="col-md-12 bg-secondary" id="primeira-coluna">
-                    <h1>Aqui vai ficar ficar algum título para o login</h1>
-                    <h4>Aqui vai ficar um sub-título para o login</h4>
+    <div class="row">
+
+        <div class="col-md-7" id="segunda-coluna">
+            <div class="row">
+                <div class="col-md-12" id="img"></div>
+            </div>
+        </div>
+
+        <div class="col-md-5 d-flex justify-content-center" id="primeira-coluna">
+            <div class="row m-5">
+                <div class="col-md-12" id="primeira-coluna">
+
+                    <h1 class="d-flex justify-content-center" id="titulo">Entrar</h1>
+                    <h5 id="subtitulo">Faça seu login e vamos as compras!</h5>
 
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input class="form-control" type="email" name="email" id="email" placeholder="Insira seu email"
-                        [(ngModel)]='userLogin.email'>
+                        <label for="email">E-mail</label>
+                        <input class="form-control" type="email" name="email" id="email" placeholder="Insira seu e-mail"
+                            [(ngModel)]='userLogin.email'>
                     </div>
 
                     <div class="form-group">
-                        <label for="senha">senha</label>
-                        <input class="form-control" type="password" name="senha" id="senha" placeholder="Insira seu senha"
-                        [(ngModel)]='userLogin.senha'>
+                        <label for="senha">Senha</label>
+                        <input class="form-control" type="password" name="senha" id="senha"
+                            placeholder="Insira seu senha" [(ngModel)]='userLogin.senha'>
                     </div>
-                    <div>
-                        <button type="submit" class="btn btn-danger mr-5" (click)='login()'>Entrar</button> 
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-success mt-2 entrar" (click)='login()'>Entrar</button>
                     </div>
-                    
+
                     <hr class="mt-5 mb-5">
-                <p class="text-center">
-                    Não tem uma conta? <a href="" routerLink='/cadastrar'>Cadastre-se</a>
-                </p>
+                    <p class="text-center">
+                        Não tem uma conta? <a href="" routerLink='/cadastrar'>Cadastre-se</a>
+                    </p>
 
                 </div>
+            </div>
         </div>
     </div>
-</div>
+</div> 

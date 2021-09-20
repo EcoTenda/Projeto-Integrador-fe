@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=EB+Garamond:ital@1&family=Libre+Franklin&display=swap');
+
+*{
+    font-family: 'Comfortaa', cursive;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}

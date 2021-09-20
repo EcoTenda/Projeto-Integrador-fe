@@ -18,6 +18,9 @@ import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-de
 import { EditProdutoComponent } from './edit/edit-produto/edit-produto.component';
 import { ProdutoComponent } from './produto/produto.component';
 import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
+import { TodosProdutosComponent } from './todos-produtos/todos-produtos.component';
+import { TelaCompraComponent } from './tela-compra/tela-compra.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,9 @@ import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.c
     CategoriaDeleteComponent,
     EditProdutoComponent,
     ProdutoComponent,
-    ProdutoDeleteComponent
+    ProdutoDeleteComponent,
+    TodosProdutosComponent,
+    TelaCompraComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +47,10 @@ import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.c
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+   { provide: LocationStrategy,
+    useClass: HashLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

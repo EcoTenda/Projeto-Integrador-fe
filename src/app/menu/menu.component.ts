@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment.prod';
+import { AuthService } from '../service/auth.service';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+ 
+  nome = environment.nome
+  foto = environment.foto
+  
+  testefalso = false;
+  testeverdade = true;
 
-  ngOnInit(): void {
+
+  constructor(public auth: AuthService) { }
+
+  ngOnInit( ){
+  
+  }
+  
+
+  sair(){
+    environment.token = '';
+    environment.nome = '';
+    environment.foto = '';
+    environment.id = 0;
   }
 
 }
