@@ -1,46 +1,22 @@
-<div class="jumbotron jumbotron-fluid m-0">
-    <div class="container">
-        <h1 class="display-4">Produtos Sustentáveis</h1>
-        <p class="lead">Nossos produtos possuem como matéria-prima recursos provenientes do manejo sustentável, ou seja, respeitando critérios ambientais e sociais preestabelecidos, que garantem a renovação natural dos ecossistemas.
-        </p>
-    </div>
-</div>
+<div style="background-color: #E9ECEF;">
+<!-- <div class="jumbotron jumbotron-fluid m-0"> -->
+    
+        <!-- <h1 class="display-4">Produtos Sustentáveis</h1> -->
+        <div class="row">
+            <img src="https://i.imgur.com/wKgA8LY.jpg" alt="" height="75%" width="100%">
+        </div>
+<!-- </div> -->
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="d-block w-100 " src="https://i.imgur.com/v1LNqmH.jpg" alt="Primeiro Slide" height="500px" width="300px">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="https://i.imgur.com/krSZ28R.jpg" alt="Segundo Slide" height="500px" width="300px">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="https://i.imgur.com/Ja53TiM.jpg" alt="Terceiro Slide" height="500px" width="300px">
-        </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Anterior</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Próximo</span>
-    </a>
-</div>
+
 <div class="container">
-    <div>
-        <h3 class="text-center my-3">Categorias</h3>
+    <div id="categoria-inicio">
+        <h3 class="text-center my-5">Categorias</h3>
     </div>
     <div>
         <div class="row d-flex justify-content-center">
-            <div class="col-md-2.5 my-5" *ngFor="let item of listaCategoria">
+            <div class="col-md-2.5 mt-2 mb-5" *ngFor="let item of listaCategoria">
                 <img src="{{item.imagem}}" alt="imagem" width="170px" height="170px"
-                    class="img-fluid rounded-circle">
+                    class="img-fluid rounded-circle mx-3">
                 <p class="m-0 text-center font-weight-bold text-dark fs-16">{{item.nome}}</p>
             </div>
         </div>
@@ -50,17 +26,19 @@
     <div>
         <h3 class="text-center my-3">Produtos</h3>
     </div>
-    <div class="row">
-        <div class="col-md-4" *ngFor="let item of listaProdutos">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{{item.imagem}}" alt="Imagem de capa do card">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-3 my-5" *ngFor="let item of listaProdutos">
+            <div class="card ">
+                <div height="10px">
+                    <img class="card-img-top img-tmh" src="{{item.imagem}}" alt="Imagem de capa do card">
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">{{item.nome}}</h5>
-                    <p class="card-text">{{item.descricao}}</p>
                     <p class="card-text">Preço: R${{item.valor}}</p>
-                    <a href="#" class="btn btn-primary">Visitar</a>
+                    <a href="#" [routerLink]="['/tela-compra', item.id]" class="btn btn-primary">Conferir</a>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>

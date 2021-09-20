@@ -5,3 +5,8 @@
 *{
     font-family: 'Comfortaa', cursive;
 }
+
+
+html{
+    scroll-behavior: smooth;
+}

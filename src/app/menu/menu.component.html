@@ -1,61 +1,46 @@
-<nav class="navbar navbar-expand-lg navbar-dark cor-nav">
-
+<nav class="navbar cor-nav navbar-expand-lg navbar-dark d-flex justify-content-between">
   <a class="navbar-brand font-weight-bold titulo" routerLink="/landing-page" href="#">EcoTenda</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
-    aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
   </button>
+  <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+    <ul class="navbar-nav mr-5">
+      <li class="nav-item">
+        <a class="nav-link" role="button" routerLink="/sobre" aria-haspopup="true" aria-expanded="false" href="#">Sobre</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#categoria-inicio" role="button" aria-haspopup="true" aria-expanded="false">
+          Categorias
+        </a>
+      </li>
+      <li class="nav-item mr-5 pr-5">
+        <a class="nav-link" href="#" routerLink="/todos-produtos" role="button" aria-haspopup="true"
+          aria-expanded="false">
+          Produtos
+        </a>
+      </li>
+    </ul>
 
+    <ul class="navbar-nav" *ngIf="auth.logado() == false">
+      <li>
+         <a  class="text-white font-weight-bold  fs-16"><i class="fa fa-user text-white" aria-hidden="true"></i> Login </a>
+         <i class="fa fa-cog fs-16" aria-hidden="true" routerLink="/configuracao"></i>
+      </li>
+      
+    </ul>
 
+    <ul class="navbar-nav" *ngIf="auth.logado()">
+      <li>
+        <img src="{{foto}}" alt="imagem do user" width="30px" height="30px" class="img-fluid rounded-circle">
+      </li>
 
-  <div class="nav ml-auto d-flex align-items-center fs-16">
-    <div class="collapse navbar-collapse font-weight-bold text-white fs-16" id="conteudoNavbarSuportado">
+      <li>
+        <p> Olá, {{nome}} </p>
+      </li>
 
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" role="button" aria-haspopup="true" aria-expanded="false" href="#">Sobre</a>
-        </li>
-
-        <li class="nav-item ">
-          <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-            Categorias
-          </a>
-        </li>
-
-
-        <li class="nav-item mr-5 pr-5">
-          <a class="nav-link" href="#" routerLink="/todos-produtos" role="button" aria-haspopup="true"
-            aria-expanded="false">
-            Produtos
-          </a>
-        </li>
-      </ul>
-
-
-
-      <ul *ngIf="auth.logado() == false">
-        <li><i class="fa fa-user nav-link" aria-hidden="true"></i></li>
-
-        <li><a class="m-0 font-weight-bold  fs-16">Login </a></li>
-      </ul>
-
-
-      <ul *ngIf="auth.logado()">
-        <li>
-          <img src="{{foto}}" alt="imagem do user" width="50px" height="50px" class="img-fluid rounded-circle">
-        </li>
-
-        <li>
-          <p>Olá, {{nome}}</p>
-        </li>
-
-        <li><a href=""><i class="fa fa-sign-out mx-2 fs-16" aria-hidden="true"></i></a></li>
-      </ul>
-
-      <div>
-        <i class="fa fa-cog fs-16" aria-hidden="true" routerLink="/configuracao"></i>
-      </div>
-    </div>
+      <li><a href=""><i class="fa text-white fa-sign-out fs-16" aria-hidden="true"></i></a></li>
+      <i class="fa fa-cog text-white fs-16" aria-hidden="true" routerLink="/configuracao"></i>
+    </ul>
 
   </div>
 </nav>
