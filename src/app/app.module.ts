@@ -1,6 +1,7 @@
 import { HttpClientModule } from '@angular/common/http'
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,7 +22,9 @@ import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.c
 import { TodosProdutosComponent } from './todos-produtos/todos-produtos.component';
 import { TelaCompraComponent } from './tela-compra/tela-compra.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { AlertasComponent } from './alertas/alertas.component';
 import { UsuarioComponent } from './usuario/usuario.component';
+
 
 @NgModule({
   declarations: [
@@ -41,13 +44,15 @@ import { UsuarioComponent } from './usuario/usuario.component';
     ProdutoDeleteComponent,
     TodosProdutosComponent,
     TelaCompraComponent,
+    AlertasComponent,
     UsuarioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ModalModule.forRoot()
   ],
   providers: [
    { provide: LocationStrategy,
