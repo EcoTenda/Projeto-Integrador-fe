@@ -47,6 +47,7 @@ export class UsuarioComponent implements OnInit {
   }
 
   atualizar(){
+      this.usuario.tipo = this.tipoUsuario
       this.usuario.senha = this.senha   
       this.usuarioService.putUser(this.usuario).subscribe((resp: Usuario)=>{
       this.usuario = resp;
