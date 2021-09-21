@@ -23,6 +23,7 @@ import { TodosProdutosComponent } from './todos-produtos/todos-produtos.componen
 import { TelaCompraComponent } from './tela-compra/tela-compra.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AlertasComponent } from './alertas/alertas.component';
+import { UsuarioComponent } from './usuario/usuario.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { AlertasComponent } from './alertas/alertas.component';
     ProdutoDeleteComponent,
     TodosProdutosComponent,
     TelaCompraComponent,
-    AlertasComponent
+    AlertasComponent,
+    UsuarioComponent
   ],
   imports: [
     BrowserModule,

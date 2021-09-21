@@ -4,7 +4,7 @@
 
   <div class="container mt-2 mb-2">
     <div class="row d-flex justify-content-center">
-      <div class="col-md-4 mb-5 d-flex justify-content-center">
+      <div *ngIf="tipoUser == 'adm'"  class="col-md-4 mb-5 d-flex justify-content-center">
         <div>
           <button class="botao">
           <a data-toggle="modal" data-target="#novaCategoria"> 
@@ -28,7 +28,7 @@
         
       </div>
 
-      <div class="col-md-4 mb-5 d-flex justify-content-center">
+      <div *ngIf="tipoUser == 'adm' || tipoUser == 'vendedor'" class="col-md-4 mb-5 d-flex justify-content-center">
       <div>
         <button class="botao">
         <a data-toggle="modal" data-target="#novoProduto">
@@ -53,10 +53,10 @@
     </div>
       </div>
 
-      <div class="col-md-4 mb-5 d-flex justify-content-center">
+      <div *ngIf="tipoUser != 'adm'" class="col-md-4 mb-5 d-flex justify-content-center">
         <div>
           <button class="botao">
-          <a data-toggle="modal" data-target="#novaCategoria"> 
+          <a routerLink='/info-user'> 
           <div class="card">
             <div class="card-body">
               <div class="d-flex justify-content-center">
@@ -71,13 +71,13 @@
         </a>
       </button>
       <div class="d-flex justify-content-center">
-        <button class="buttonEdit btn-color" data-toggle="modal" routerLink='/categoria'>Editar</button>
+        <button class="buttonEdit btn-color" data-toggle="modal" routerLink='/info-user'>Editar</button>
       </div>
         </div>
         
       </div>
 
-      <div class="col-md-4 mb-5 d-flex justify-content-center">
+      <div *ngIf="tipoUser == 'adm'" class="col-md-4 mb-5 d-flex justify-content-center">
         <div>
           <button class="botao">
           <a data-toggle="modal" data-target="#novaCategoria"> 
