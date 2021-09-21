@@ -2,3 +2,13 @@
     height: 200px;
     width: 100%;
 }
+.corH{
+    background-color: #ffffff;
+}
+.border{
+    border-style: hidden;
+    border-radius: 8px rgba(0, 0, 0, 0);
+}
+.alinhar{
+    margin: 0 auto;
+}
