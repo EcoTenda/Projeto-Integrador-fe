@@ -22,6 +22,7 @@ export class ConfiguracaoComponent implements OnInit {
 
   usuario: Usuario = new Usuario();
   idUser = environment.id;
+  tipoUser = environment.tipo;
 
   constructor(
     private categoriaService: CategoriaService,

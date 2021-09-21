@@ -13,6 +13,7 @@ import { ProdutoComponent } from './produto/produto.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { TelaCompraComponent } from './tela-compra/tela-compra.component';
 import { TodosProdutosComponent } from './todos-produtos/todos-produtos.component';
+import { UsuarioComponent } from './usuario/usuario.component';
 
 const routes: Routes = [
   {path: '' , redirectTo: 'landing-page', pathMatch: 'full'},
@@ -30,6 +31,7 @@ const routes: Routes = [
   {path: 'produto-delete/:id', component:ProdutoDeleteComponent},
   {path: 'todos-produtos' , component:TodosProdutosComponent},
   {path: 'tela-compra/:id', component:TelaCompraComponent},
+  {path: 'info-user', component: UsuarioComponent}
 ];
 
 @NgModule({

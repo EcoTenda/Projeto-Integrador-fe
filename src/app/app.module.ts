@@ -21,6 +21,7 @@ import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.c
 import { TodosProdutosComponent } from './todos-produtos/todos-produtos.component';
 import { TelaCompraComponent } from './tela-compra/tela-compra.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { UsuarioComponent } from './usuario/usuario.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     ProdutoComponent,
     ProdutoDeleteComponent,
     TodosProdutosComponent,
-    TelaCompraComponent
+    TelaCompraComponent,
+    UsuarioComponent
   ],
   imports: [
     BrowserModule,
