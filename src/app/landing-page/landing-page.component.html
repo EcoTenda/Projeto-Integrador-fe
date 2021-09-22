@@ -1,47 +1,49 @@
-<div class="container-fluid">
+<div class="container-fluid espaco">
     <div style="background-color: #E9ECEF;">
 
-    <!-- <div class="jumbotron jumbotron-fluid m-0"> -->
-    
+        <!-- <div class="jumbotron jumbotron-fluid m-0"> -->
+
         <!-- <h1 class="display-4">Produtos Sustentáveis</h1> -->
-        <div class="row">
-            <img src="https://i.imgur.com/YcmMLiL.png" alt="" width="100%">
+        <div class="row ">
+            <div class="col-md-12 espaco">
+                <img src="https://i.imgur.com/YcmMLiL.png" alt="" width="100%">
+            </div>
         </div>
-<!-- </div> -->
-    <div id="categoria-inicio">
-        <h3 class="text-center my-5">Categorias</h3>
-    </div>
-    <div>
+        <!-- </div> -->
+        <div id="categoria-inicio">
+            <h3 class="text-center my-5">Categorias</h3>
+        </div>
+        <div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-2.5 mt-2 mb-5" *ngFor="let item of listaCategoria">
+                    <img src="{{item.imagem}}" alt="imagem" width="170px" height="170px"
+                        class="img-fluid rounded-circle mx-3">
+                    <p class="m-0 text-center font-weight-bold text-dark fs-16">{{item.nome}}</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <h3 class="text-center my-3">Produtos</h3>
+        </div>
         <div class="row d-flex justify-content-center">
-            <div class="col-md-2.5 mt-2 mb-5" *ngFor="let item of listaCategoria">
-                <img src="{{item.imagem}}" alt="imagem" width="170px" height="170px"
-                    class="img-fluid rounded-circle mx-3">
-                <p class="m-0 text-center font-weight-bold text-dark fs-16">{{item.nome}}</p>
-            </div>
-        </div>
-
-    </div>
-
-    <div>
-        <h3 class="text-center my-3">Produtos</h3>
-    </div>
-    <div class="row d-flex justify-content-center">
-        <div class="col-md-3 my-5" *ngFor="let item of listaProdutos">
-            <div class="card ">
-                <div height="10px">
-                    <img class="card-img-top img-tmh" src="{{item.imagem}}" alt="Imagem de capa do card">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">{{item.nome}}</h5>
-                    <p class="card-text">Preço: R${{item.valor}}</p>
-                    <a href="#" [routerLink]="['/tela-compra', item.id]" class="btn btn-primary">Conferir</a>
+            <div class="col-md-3 my-5" *ngFor="let item of listaProdutos">
+                <div class="card ">
+                    <div height="10px">
+                        <img class="card-img-top img-tmh" src="{{item.imagem}}" alt="Imagem de capa do card">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{item.nome}}</h5>
+                        <p class="card-text">Preço: R${{item.valor}}</p>
+                        <a href="#" [routerLink]="['/tela-compra', item.id]" class="btn btn-primary">Conferir</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    
-</div>
+
+    </div>
 
 
     <div class="corH">
