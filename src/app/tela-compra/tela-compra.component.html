@@ -1,42 +1,41 @@
 <div style="background-color: #EAEAEA;">
-<div class="container" style="background-color: white"> 
-    <div class="row" >
-        <div class="col-md-7 my-5">
+    <div class="container" style="background-color: white">
+        <div class="row">
+            <div class="col-md-7 my-5">
 
-            <div class="card" style="width: 25rem;">
-                <img src="{{produto.imagem}}" class="img-responsive borda" alt="">
-                <div class="card-body">
-                    <p> {{produto.descricao}}</p>
+                <div class="card" style="width: 25rem;">
+                    <img src="{{produto.imagem}}" class="img-responsive borda" alt="">
+                    <div class="card-body">
+                        <p> {{produto.descricao}}</p>
+                    </div>
                 </div>
-              </div>
-           
-        </div>
-        <div class="col-md-5">
-            <h3 class="mt-5">{{produto.nome}}</h3>
-           
-            <p>Valor: R${{produto.valor}}</p>
-            <button class="btn btn-info mb-3">Comprar</button>
-            <p>Formas de pagamento:</p>
-            <div class="row mx-3">
-                <img src="https://i.imgur.com/FGAprYs.png" alt=""  class="tamanho-icone">
-                <img src="https://i.imgur.com/0gGDLnX.png" alt=""  class="tamanho-icone mx-3">
-                <img src="https://i.imgur.com/kFQ1YkU.png" alt="" class="tamanho-icone">
+
             </div>
-            <div class="row">
-                <form class="form-inline">
-                    <div class="form-group mb-2">
-                      <input type="text" readonly class="form-control-plaintext" id="staticEmail2">
-                      <label class="ml-3" for="">Calcule seu CEP</label>
-                    </div>
-                    <div class="form-group mx-sm-3 mb-2">
-                      <label for="inputPassword2" class="sr-only">CEP</label>
-                      <input type="text" class="form-control" id="inputPassword2" placeholder="00000-000">
-                    </div>
-                    <button type="submit" class="btn btn-info mb-2">OK</button>
-                  </form>
+            <div class="col-md-5">
+                <h3 class="mt-5">{{produto.nome}}</h3>
+
+                <p>Valor: R${{produto.valor}}</p>
+                <button class="btn btn-info mb-3" (click)='comprar()'>Comprar</button>
+                <p>Formas de pagamento:</p>
+                <div class="row mx-3">
+                    <img src="https://i.imgur.com/FGAprYs.png" alt="" class="tamanho-icone">
+                    <img src="https://i.imgur.com/0gGDLnX.png" alt="" class="tamanho-icone mx-3">
+                    <img src="https://i.imgur.com/kFQ1YkU.png" alt="" class="tamanho-icone">
+                </div>
+                <div class="row">
+                    <form class="form-inline">
+                        <div class="form-group mb-2">
+                            <input type="text" readonly class="form-control-plaintext" id="staticEmail2">
+                            <label class="ml-3" for="">Calcule seu CEP</label>
+                        </div>
+                        <div class="form-group mx-sm-3 mb-2">
+                            <label for="inputPassword2" class="sr-only">CEP</label>
+                            <input type="text" class="form-control" id="inputPassword2" placeholder="00000-000">
+                        </div>
+                        <button type="submit" class="btn btn-info mb-2" (click)='calcularCEP()'>OK</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 </div>
-</div>
-

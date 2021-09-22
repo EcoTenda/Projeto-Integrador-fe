@@ -55,14 +55,14 @@
                         <h3>Receba Nossas Ofertas!</h3>
                         <div class="my-3">
                             <h6>Nome</h6>
-                            <input class="form-control" placeholder="Insira seu nome">
+                            <input class="form-control" placeholder="Insira seu nome" (input)='validarNome($event)'>
                         </div>
                         <div class="my-3">
                             <h6>Email</h6>
-                            <input class="form-control" placeholder="Insira seu email">
+                            <input class="form-control" placeholder="Insira seu email" (input)='validarEmail($event)'>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <button type="button" class="btn btn-success">Enviar</button>
+                            <button type="button" class="btn btn-success" (click)='enviar()'>Enviar</button>
                         </div>
                     </div>
 

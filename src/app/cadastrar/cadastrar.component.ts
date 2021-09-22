@@ -27,7 +27,6 @@ export class CadastrarComponent implements OnInit {
 
   confirmSenha(event:any) {
     this.confirmarSenha = event.target.value
-
   }
 
   tipoUser(event: any){
