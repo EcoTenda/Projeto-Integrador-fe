@@ -23,6 +23,7 @@ export class LandingPageComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    window.scroll(0,0);
     this.getProdutos();
     this.getCategorias();
   }

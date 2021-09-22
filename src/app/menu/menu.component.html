@@ -1,5 +1,5 @@
 <nav class="navbar cor-nav navbar-expand-lg navbar-dark d-flex justify-content-between">
-  <a class="navbar-brand font-weight-bold titulo" routerLink="/landing-page" href="#"><img src="../../assets/img/EcoTenda.png" white="70px" height="70px" alt=""></a>
+  <a class="navbar-brand font-weight-bold titulo" routerLink="/landing-page" href="#"><img src="../../assets/img/EcoTenda.png" white="60px" height="60px" alt=""></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
     aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@
         </li>
         <ul class="navbar-nav alinhar" >
           <li *ngIf="auth.logado() == false">
-            <a routerLink="/login" class="text-white font-weight-bold  fs-16"><i class="fa fa-user text-white"
+            <a routerLink="/login" class="text-white font-weight-bold mx-2 fs-16"><i class="fa fa-user text-white"
                 aria-hidden="true"></i> Login </a>
             <i class="fa fa-cog fs-16 text-white" aria-hidden="true" routerLink="/configuracao"></i>
           </li>
