@@ -20,7 +20,14 @@ li{
     align-items: center;
     justify-content: center;
 }
+.link{
+    color: #fff !important;
+    font-weight: bold !important;
+}
 
+.link:hover{
+    color: rgb(117, 116, 116) !important;
+}
 
 @media (max-width: 600px)
 {
