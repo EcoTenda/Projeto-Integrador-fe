@@ -1,39 +1,54 @@
-.h01 {
-    /* display: flex; */
-    /* align-items: center; */
-    color: #333;
-    text-align: center;
-    /* margin: 100 px auto 50px; */
-    font-family: sans-serif;    
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+  
+p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 13.68pt;
 }
-
+ 
+.titulo{
+   font-family:'Luckiest Guy', cursive; 
+}
+ 
+.titulo-pilar-equipe{
+    text-align: center;
+    font-family: 'Passion One', cursive;
+    font-size: 36pt;
+}
+ 
+.titulomvv{
+    font-family: 'Passion One', cursive;
+    font-size: 28pt;
+}
+ 
 .containerequipe{
     width: 100%;
     height: 100%;
     font-family: sans-serif;
 }
-
+ 
 .equipe{
     width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
 }
-
+ 
 .colequipe{
     flex-basis: 100%;
     overflow: hidden;
 }
-
+ 
 .cardequipe{
   max-width: 250px;
   height: 250px;
   margin: auto;
   display: flex;
   perspective: 800px;
-  cursor:pointer;
+  
 }
-
+ 
 .inner-box{
     position: relative;
     width: 100%;
@@ -43,7 +58,7 @@
     transition: transform 1s;
     transform-style: preserve-3d;
 }
-
+ 
 .card-front, .card-back {
 position: absolute;
 width: 100%;
@@ -51,146 +66,170 @@ height: 100%;
 backface-visibility: hidden;
 border-radius: 0.1rem;
 }
-
+ 
 .card-front{
-
+ 
 background-position: center;
 background-size: cover;
 }
-
+ 
 .card01{
     background-image: url(https://github.com/alessandrodjr.png);
 }
-
+ 
 .card02{
     background-image: url(https://i.imgur.com/edcPdCz.jpg);
 }
-
+ 
 .card03{
     background-image: url(https://github.com/bbaldaia.png);
 }
-
+ 
 .card04{
-    background-image: url(https://i.imgur.com/orzBvgZ.png);
+    background-image: url(https://i.imgur.com/orzBvgZ.png?1);
 }
-
+ 
 .card05{
     background-image: url(https://i.imgur.com/2uJnOsx.jpg);
 }
 
-
-
 .spanequipe {
-  display: inline-block;
-  width: 200px;  
+display: inline-block;
+width: 200px;  
  padding: 14px 0;
  margin-top: 160px;
  border-radius: 4px;
- /* background: #fff; */
- color: #fff;
+ color: #ffffff;
  transition: transform 1s;
+ font-family: 'Arimo', sans-serif;
+ font-size: 16.68pt; 
 }
-
+ 
 .spanmvv {
     display: inline-block;
     width: 200px;  
    padding: 14px 0;
    margin-top: 160px;
-   border-radius: 4px;
-   /* background: #fff; */
+   border-radius: 4px;   
    color: #000000;
    transition: transform 1s;
-  }
-
+  }  
+ 
 .card-back{
     background: #9DBF54;
     transform: rotateX(180deg);
 }
-
+ 
 .backmissao{
     background: #E8EAE7;
     transform: rotateX(180deg);
 }
-
+ 
 .backvisao{
     background: #FAE8D6;
     transform: rotateX(180deg);
 }
-
+ 
 .backvalores{
     background: #B2D9B3;
     transform: rotateX(180deg);
 }
-
+ 
 .cardequipe:hover .inner-box {
     transform: rotateX(-180deg);
 }
-
+ 
 .cardequipe:hover span{
     transform: translateY(140px)
 }
-
+ 
 .pequipe{
     display: inline-block;
-    color: #fff;
+    color: #5e3519;
     padding-bottom: 10px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #5e3519;
     margin-top: 140px;
-
+    font-family: 'Arimo', sans-serif;
+    font-size: 16.68pt; 
 }
-
+ 
+.pequipe:hover{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+ 
 .pnome{
     display: inline-block;
-    color: #fff;
+    color: #5e3519;
     padding-bottom: 10px;
-    border-bottom: px solid #fff;
+    border-bottom: px solid #5e3519;
     margin-top: 140px;
-
+    font-family: 'Arimo', sans-serif;
+    font-size: 14.68pt; 
 }
-
+ 
+.pnome:hover{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+ 
 .fa{
     font-size: 2rem;
+    color: #ffffff;
+    cursor:pointer;
 }
-
-
+ 
+.fa-github:hover{
+    color: #161B22;
+}
+ 
+.fa-linkedin-square:hover{
+    color: #0e76a8;
+}
+ 
+/* Fim - Nossa Equipe */
+ 
+ 
+/* Missão Visão Valores */
+ 
 .cardmvv{
     max-width: 400px;
     height: 400px;
     margin: auto;
     display: flex;
     perspective: 1100px;
-    cursor:pointer;
+    cursor: default #000000;    
   }
-
+ 
   .cardmvv:hover .inner-box {
     transform: rotateX(-180deg);
 }
-
+ 
 .cardmvv:hover span{
     transform: translateY(140px)
 }
-
+ 
 .cardmissao{
     background-image: url(https://i.imgur.com/OVdyuci.jpg);
 }
-
+ 
 .cardvisao{
     background-image: url(https://i.imgur.com/oSNbFvq.jpg);
 }
-
+ 
 .cardvalores{
     background-image: url(https://i.imgur.com/459tBtZ.jpg);
 }
-
+ 
 .pmvv{
     display: inline-block;    
     color: #000000;
     padding-bottom: 10px;    
     margin-top: auto;
     text-justify: center;
-
+ 
 }
-
+ 
 .pbordermvv{
     border-bottom: 1px solid #000000;
     display: inline-block;    
@@ -199,392 +238,7 @@ background-size: cover;
     margin-top: auto;
     text-justify: center;
 }
-
- 
-.servicos-54:after{
-    content: '';
-    display: block;
-    width: 90px;
-    height: 295px;
-    position: absolute;
-    top: calc(50% - 147.5px);
-    right: -10px;
-    z-index: -1;
-    background-image: url(https://i.imgur.com/kOlXJNi.png)
-}
-
-/* Missão Visão Valores */
-
-.mvvresposnive{
-    /* max-width: 60rem; */
-    margin: 0 auto;
-    image-orientation: flip;
-    
-}
-
-
- 
-.colorcardmissao1{
-    background-color: #E8EAE7;
-    border-radius: 0.25rem;
-     /* max-height: 300rem; */
-    }
- 
-.colorcardvisao1{
-background-color: #FAE8D6;
-border-radius: 0.25rem;
-/* max-height: 23rem; */
-}
- 
-.colorcardvalores1{
-    background-color: #B2D9B3;
-    border-radius: 0.25rem;
-    /* max-height: 36rem; */
-    } 
- 
-::before,
-::after{
-    box-sizing: border-box;   
-    
-}
- 
-/* body {
-    display: grid;
-    min-height:  100vh;
-    place-items: center;
-    line-height: 1.6;
-    background: gainsboro;
-    font-family: sans-serif;
-    padding-right: 15em;
-} */
- 
-.missao{
-color: black;
-/* background-image: url(https://i.imgur.com/J14pi1k.jpg); */
- 
-background-size: cover;
-/* padding: 10rem 0 0; */
-/* width: 150px;
-height: 150px; */
-/* max-width: 35ch; */
-/* border-radius: 3rem; */
-/* overflow: hidden; */
-transition: transform 250ms ease;
-}
- 
-.visao {
-    color: black;    
-    /* background-image: url(https://i.imgur.com/o9sA3sL.jpg); */   
-    background-size: cover;
-    /* padding: 10rem 0 0; */
-    /* max-width: 35ch; */
-    /* border-radius: 3rem; */
-    /* overflow: hidden; */
-    transition: transform 250ms ease;
-    }
- 
-    .valores{
-        color: black;    
-        /* background-image: url(https://i.imgur.com/o9sA3sL.jpg); */
-        
-        background-size: cover;
-        /* padding: 10rem 0 0; */
-        /* max-width: 35ch; */
-        /* border-radius: 3rem; */
-        /* overflow: hidden; */
-        transition: transform 250ms ease;
-        }
- 
-.missao:hover,
-.missao:focus-within{
-    transform: scale(1.05);
-}
- 
-.visao:hover,
-.visao:focus-within{
-    transform: scale(1.05);
-}
- 
-.valores:hover,
-.valores:focus-within{
-    transform: scale(1.05);
-}
- 
-.titulomissao{
-  --padding: 1.5rem;
-  padding: var(--padding);
-  background: linear-gradient(hsl(100 100% 100% /0), hsl(100 100% 100% /0) 50%, hsl(100 100% 100% /0.05));  
-  transform: translateY(0);
-  transition: transform 800ms ease;
-  
-}
- 
-.titulovisao{
-    --padding: 1.5rem;
-    padding: var(--padding);
-    background: linear-gradient(hsl(100 100% 100% /0), hsl(100 100% 100% /0) 50%, hsl(100 100% 100% /0.05));  
-    transform: translateY(0);
-    transition: transform 800ms ease;
-    
-  }
- 
-  .titulovalores{
-    --padding: 1.5rem;
-    padding: var(--padding);
-    background: linear-gradient(hsl(100 100% 100% /0), hsl(100 100% 100% /0) 50%, hsl(100 100% 100% /0.05));  
-    transform: translateY(0);
-    transition: transform 800ms ease;        
-  }
  
  
+/* Fim - Missão Visão Valores */
  
-@media screen and (hover) {
-    .titulomissao{
-        transform: translateY(-90%);
-        transition: transform 500ms ease;
-    }
- 
-    .titulovisao{
-        transform: translateY(-72%);
-        transition: transform 500ms ease;
-    }
- 
-    .titulovalores{
-        transform: translateY(-102%);
-        transition: transform 500ms ease;
-    }
- 
-    
-.missao:hover .titulomissao,
-.missao:focus-within .titulomissao{    
-    transform: translateY(-5%);
-    transition-delay: 500ms;
-}
- 
-.visao:hover .titulovisao,
-.visao:focus-within .titulovisao{
-    transform: translateY(-3%);
-    transition-delay: 500ms;
-}
- 
-.valores:hover .titulovalores,
-.valores:focus-within .titulovalores{
-    transform: translateY(-5%);
-    transition-delay: 500ms;
-}
- 
-.missao:focus-within .titulomissao{
-    transition-duration: 0ms;
-}
- 
-.visao:focus-within .titulovisao{
-    transition-duration: 0ms;
-}
- 
-.visao:focus-within .titulovalores{
-    transition-duration: 0ms;
-}
- 
-.valores:focus-within .card-content{
-    transition-duration: 0ms;
-}
-.card-content > *:not(.card-title) {
-    opacity: 0;
-    transition: opacity 250ms linear;    
-}
- 
- 
- 
-.missao:hover .card-content > *:not(.card-title),
-.missao:focus-within .card-content > *:not(.card-title) {
-    opacity: 1;
-    transition-delay: 500ms;
-}
- 
-.visao:hover .card-content > *:not(.card-title),
-.visao:focus-within .card-content > *:not(.card-title) {
-    opacity: 1;
-    transition-delay: 500ms;
-}
- 
-.valores:hover .card-content > *:not(.card-title),
-.valores:focus-within .card-content > *:not(.card-title) {
-    opacity: 1;
-    transition-delay: 500ms;
-}
- 
-.card-title::after{
-    transform: scaleX(0);    
-}
- 
-}
- 
- 
-.card-title{
-    position: relative;
-    width: max-content-center;
-}
- 
- 
-.card-text{
-    color: rgb(255, 255, 255 / 0.85)
-}
- 
-.card-title::after{
-    content: "";
-    position: absolute;
-    height: 3px;
-    left: calc(var(--padding) * -0.5);
-    bottom: -2px;
-    width: calc(100% + var(--padding));
-    background: black;
-    
-    transform-origin: left;
-    transition: transform 250ms ease;
-}
- 
-.missao:hover .card-title::after,
-.missao:focus-within .card-title::after {
-  transform: scaleX(1);
-    
-}
- 
-.visao:hover .card-title::after,
-.visao:focus-within .card-title::after {
-  transform: scaleX(1);
-    
-}
- 
-.valores:hover .card-title::after,
-.valores:focus-within .card-title::after {
-  transform: scaleX(1);
-    
-}
- 
- 
-.button {
-cursor: pointer;
-display: inline-block;
-text-decoration: none;
-color: black;
-background-color: none;
-padding: 0.5em 1.25em;
-border-radius: 0.25rem;
-}
- 
-.button:hover,
-.button:focus{
-    background-color: #9DBF54;
-}
- 
-@media screen and (prefers-reduced-motion: reduce){
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms
-        !important;
-        animation-iteration-count: 1
-        !important;
-        transition-duration: 0.01ms
-        !important;
-        scroll-behavior: auto !important;
-        transition-delay: 0ms !important;
- 
- 
-    }
-}
-
-/* Nossa Equipe */
-
-body {
-    background-color: #ffffff;
-}
-
-
-.textoSobre {
-    font-family: 'Open Sans', sans-serif;
-}
-
-.caixaSobre {
-    /* width: 200%;
-    margin-left: 50%; */
-    color: #fff;
-    background-color: #8757df;
-}
-
-.caixaSobre h1 {
-    text-align: center;
-    font-family: 'Clicker Script', cursive;
-}
-
-.caixaSobrePerfil {
-    color: #fff;
-    background-color: #8757df;
-}
-
-.fa-linkedin-square {
-    color: white;
-}
-
-.fa-github-square {
-    color: white;
-}
-
-.fa-linkedin-square:hover {
-    color: #0072b1;
-}
-
-.fa-github-square:hover {
-    color: #2D333B;
-}
-
-.voltar {
-    animation: is-bouncing 0.7s ease alternate infinite;
-    display: grid;
-    place-items: left;
-    height: 30px;
-}
-
-.fotos {
-    width: 250px;
-    height: 320px;
-    border-radius: 30%;
-    /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); */
-}
-
-.flip-box {
-    width: 250px;
-    height: 320px;
-}
-
-.flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: 1.5s;
-    transform-style: preserve-3d;
-}
-
-.flip-box:hover .flip-box-inner {
-    transform: rotateX(180deg);
-}
-
-.flip-box-front,
-.flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10%;
-}
-
-.flip-box-back {
-    background-color: #4F3382;
-    transform: rotateX(180deg);
-    border-radius: 35%;
-}
-
-.logo {
-    width: 200px;
-    height: 75px;
-}
