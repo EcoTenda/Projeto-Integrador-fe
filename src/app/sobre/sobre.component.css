@@ -17,11 +17,6 @@ p{
     font-size: 36pt;
 }
  
-.titulomvv{
-    font-family: 'Passion One', cursive;
-    font-size: 28pt;
-}
- 
 .containerequipe{
     width: 100%;
     height: 100%;
@@ -103,37 +98,12 @@ width: 200px;
  transition: transform 1s;
  font-family: 'Arimo', sans-serif;
  font-size: 16.68pt; 
-}
- 
-.spanmvv {
-    display: inline-block;
-    width: 200px;  
-   padding: 14px 0;
-   margin-top: 160px;
-   border-radius: 4px;   
-   color: #000000;
-   transition: transform 1s;
-  }  
+} 
  
 .card-back{
     background: #9DBF54;
     transform: rotateX(180deg);
-}
- 
-.backmissao{
-    background: #E8EAE7;
-    transform: rotateX(180deg);
-}
- 
-.backvisao{
-    background: #FAE8D6;
-    transform: rotateX(180deg);
-}
- 
-.backvalores{
-    background: #B2D9B3;
-    transform: rotateX(180deg);
-}
+} 
  
 .cardequipe:hover .inner-box {
     transform: rotateX(-180deg);
@@ -150,7 +120,7 @@ width: 200px;
     border-bottom: 1px solid #5e3519;
     margin-top: 140px;
     font-family: 'Arimo', sans-serif;
-    font-size: 16.68pt; 
+    font-size: 14.68pt; 
 }
  
 .pequipe:hover{
@@ -165,7 +135,7 @@ width: 200px;
     border-bottom: px solid #5e3519;
     margin-top: 140px;
     font-family: 'Arimo', sans-serif;
-    font-size: 14.68pt; 
+    font-size: 16pt; 
 }
  
 .pnome:hover{
@@ -191,6 +161,36 @@ width: 200px;
  
  
 /* Missão Visão Valores */
+
+.titulomvv{
+    font-family: 'Passion One', cursive;
+    font-size: 28pt;
+}
+
+.spanmvv {
+    display: inline-block;
+    width: 200px;  
+   padding: 14px 0;
+   margin-top: 160px;
+   border-radius: 4px;   
+   color: #000000;
+   transition: transform 1s;
+  } 
+
+.backmissao{
+    background: #E8EAE7;
+    transform: rotateX(180deg);
+}
+
+.backvisao{
+    background: #FAE8D6;
+    transform: rotateX(180deg);
+}
+ 
+.backvalores{
+    background: #B2D9B3;
+    transform: rotateX(180deg);
+}
  
 .cardmvv{
     max-width: 400px;
